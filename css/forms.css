@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: vazir;
+    direction: rtl;
+}
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f97f8b;
+    height: 100vh;
+}
+.signup {
+    width: 80%;
+    padding: 35px 30px;
+}
+.signup h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.signup i {
+    color: #f97f8b;
+    margin-left: 5px;
+    font-size: 1.2em;
+    margin-top: 3px;
+}
+.input input {
+    border: none;
+    outline: none;
+    width: 70%;
+    background-color: transparent;
+    font-family: vazir;
+    transition: all 0.3s linear;
+}
+.input div {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 15px 0px; 
+}
+.remember {
+    margin-top: 20px;
+}
+.remember span {
+    margin-right: 5px;
+    color: white;
+}
+.button {
+    display: grid;
+    grid-template-columns: 60% 25%;
+    margin-top: 30px;
+}
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.signup-btn {
+    border: 1px solid white;
+    padding: 5px 0px;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.login-btn {
+    background: linear-gradient(45deg, #5b0ee9, #aa7df2);
+    text-align: center;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.signup-btn:hover {
+    transform: scaleX(1.05);
+}
+.login-btn:hover {
+    background: linear-gradient(45deg, #aa7df2, #5b0ee9);
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box {
+    width: 90%;
+}
+.img-signup {
+    width: 100%;
+
+}
+@media only screen and (min-width:220px) and (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .img {
+        display: none;
+    }
+    .signup {
+        width: 85%;
+    }
+    .button {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .login-btn {
+        margin-top: 30px;
+        width: 50%;
+        transform: translateX(-50%);
+    }
+    .signup-btn {
+        margin: 0px;
+    }
+    
+}
